@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>iizuka project2020</title>
+        <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top-100;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+
+    </head>
+    <body>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#p">目的</a></li>
+                <li><a href="#m">メンバー</a></li>
+                <li><a href="#o">成果物</a></li>
+                <li><a href="https://iizukaproject2020.tumblr.com/?ref_url=https://iizukaproject2020.tumblr.com/post/636539788847202304/37/embed">公式tumbler</a></li>
+            </ul>
+        </nav>
+
+        <div class="bi">
+            <h1>飯塚プロジェクト</h1>
+            <p>itの力を使い業務効率化を目指す</p>
+        </div>
+        
+        <div class="p" id="p">
+        <h2 class="catch">プロジェクトの目的</h2>
+        <p>ワークフローツールとは、業務上の手続きを、事前に定義したフローに沿ってシステム化することが可能なツールのこと。<br>ワークフローツールをただ導入するだけでなく、組織の問題点を解決するためにどのように導入すればいいのかを考え、導入の実現を目指します。</p>
+        <h3>主に使用したツール&プログラミング言語</h3>
+        <div class="grid">
+            <div class="item">
+                <img src="form.png">
+                <p>Microsoft Forms</p>
+            </div>
+            <div class="item">
+                <img src="flow.png">
+                <p>Microsoft Flow</p>
+            </div>
+            <div class="item">
+                <img src="python.png">
+                <p>Python</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="m" id="m">
+            <h2 class="catch">メンバー</h2>
+
+            <div class="grid">
+                <div class="item">
+                    <img src="member1.jpg">
+                    <p>リーダー　鈴木 遥久</p>
+                </div>
+                <div class="item">
+                    <img src="member2.jpg">
+                    <p>副リーダー　寺岡 巧</p>
+                </div>
+                <div class="item">
+                    <img src="member5.jpg">
+                    <p>刈田 陽</p>
+                </div>
+                <div class="item">
+                    <img src="member7.jpg">
+                    <p>今村 洋之</p>
+                </div>
+                <div class="item">
+                    <img src="member3.jpg">
+                    <p>河上 綺更</p>
+                </div>
+                <div class="item">
+                    <img src="member4.jpg">
+                    <p>河崎 優真</p>
+                </div>
+                <div class="item">
+                    <img src="member9.jpg">
+                    <p>松原 圭佑</p>
+                </div>
+                <div class="item">
+                    <img src="member6.jpg">
+                    <p>笹澤 健司</p>
+                </div>
+                <div class="item">
+                    <img src="member8.jpg">
+                    <p>亀安 翔太</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="o" id="o">
+            <h2 class="catch">成果物</h2>
+            <div class="sld">
+                <h3>最終発表資料</h3>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTUi-EDXiS2Baix0g1cmzEOv3m9d-UsX7gdaC8IfsMyukk51KQ6qbxYqpPfHtGhChooj4YfIYQq_BBU/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>    
+　　　　　　　　　　<h3>YouTube</h3>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/KsSfq6gsM4A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <footer>
+            <p>
+                <small>&copy; 2020 飯塚プロジェクト</small> 
+            </p>
+           
+    
+        </footer>
+
+       
+
+    </body>
+</html>
+
